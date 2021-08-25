@@ -84,7 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Guest.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Monster.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Room.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/stdafx.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/main.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Monster.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/CMakeLists.txt">

@@ -129,6 +129,54 @@ HusseinMourad_HotelReservationSystem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build
 .PHONY : HusseinMourad_HotelReservationSystem/fast
 
+headers/Human.o: headers/Human.cpp.o
+.PHONY : headers/Human.o
+
+# target to build an object file
+headers/Human.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o
+.PHONY : headers/Human.cpp.o
+
+headers/Human.i: headers/Human.cpp.i
+.PHONY : headers/Human.i
+
+# target to preprocess a source file
+headers/Human.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.i
+.PHONY : headers/Human.cpp.i
+
+headers/Human.s: headers/Human.cpp.s
+.PHONY : headers/Human.s
+
+# target to generate assembly for a file
+headers/Human.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.s
+.PHONY : headers/Human.cpp.s
+
+headers/RoomService.o: headers/RoomService.cpp.o
+.PHONY : headers/RoomService.o
+
+# target to build an object file
+headers/RoomService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o
+.PHONY : headers/RoomService.cpp.o
+
+headers/RoomService.i: headers/RoomService.cpp.i
+.PHONY : headers/RoomService.i
+
+# target to preprocess a source file
+headers/RoomService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.i
+.PHONY : headers/RoomService.cpp.i
+
+headers/RoomService.s: headers/RoomService.cpp.s
+.PHONY : headers/RoomService.s
+
+# target to generate assembly for a file
+headers/RoomService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.s
+.PHONY : headers/RoomService.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,6 +201,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sources/Guest.o: sources/Guest.cpp.o
+.PHONY : sources/Guest.o
+
+# target to build an object file
+sources/Guest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o
+.PHONY : sources/Guest.cpp.o
+
+sources/Guest.i: sources/Guest.cpp.i
+.PHONY : sources/Guest.i
+
+# target to preprocess a source file
+sources/Guest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.i
+.PHONY : sources/Guest.cpp.i
+
+sources/Guest.s: sources/Guest.cpp.s
+.PHONY : sources/Guest.s
+
+# target to generate assembly for a file
+sources/Guest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.s
+.PHONY : sources/Guest.cpp.s
+
+sources/Monster.o: sources/Monster.cpp.o
+.PHONY : sources/Monster.o
+
+# target to build an object file
+sources/Monster.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o
+.PHONY : sources/Monster.cpp.o
+
+sources/Monster.i: sources/Monster.cpp.i
+.PHONY : sources/Monster.i
+
+# target to preprocess a source file
+sources/Monster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.i
+.PHONY : sources/Monster.cpp.i
+
+sources/Monster.s: sources/Monster.cpp.s
+.PHONY : sources/Monster.s
+
+# target to generate assembly for a file
+sources/Monster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.s
+.PHONY : sources/Monster.cpp.s
+
+sources/Room.o: sources/Room.cpp.o
+.PHONY : sources/Room.o
+
+# target to build an object file
+sources/Room.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o
+.PHONY : sources/Room.cpp.o
+
+sources/Room.i: sources/Room.cpp.i
+.PHONY : sources/Room.i
+
+# target to preprocess a source file
+sources/Room.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.i
+.PHONY : sources/Room.cpp.i
+
+sources/Room.s: sources/Room.cpp.s
+.PHONY : sources/Room.s
+
+# target to generate assembly for a file
+sources/Room.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.s
+.PHONY : sources/Room.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HusseinMourad_HotelReservationSystem"
+	@echo "... headers/Human.o"
+	@echo "... headers/Human.i"
+	@echo "... headers/Human.s"
+	@echo "... headers/RoomService.o"
+	@echo "... headers/RoomService.i"
+	@echo "... headers/RoomService.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/Guest.o"
+	@echo "... sources/Guest.i"
+	@echo "... sources/Guest.s"
+	@echo "... sources/Monster.o"
+	@echo "... sources/Monster.i"
+	@echo "... sources/Monster.s"
+	@echo "... sources/Room.o"
+	@echo "... sources/Room.i"
+	@echo "... sources/Room.s"
 .PHONY : help
 
 

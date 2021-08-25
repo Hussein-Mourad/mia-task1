@@ -79,17 +79,92 @@ CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/main.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.s
 
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/flags.make
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o: ../sources/Guest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o -c /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp > CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.i
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.s
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/flags.make
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o: ../sources/Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o -c /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Monster.cpp
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Monster.cpp > CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.i
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Monster.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.s
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/flags.make
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o: ../sources/Room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o -c /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp > CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.i
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.s
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/flags.make
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o: ../headers/RoomService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o -c /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.cpp
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.cpp > CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.i
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.s
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/flags.make
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o: ../headers/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o -c /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.cpp
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.cpp > CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.i
+
+CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.cpp -o CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.s
+
 # Object files for target HusseinMourad_HotelReservationSystem
 HusseinMourad_HotelReservationSystem_OBJECTS = \
-"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o"
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o" \
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o" \
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o" \
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o" \
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o" \
+"CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o"
 
 # External object files for target HusseinMourad_HotelReservationSystem
 HusseinMourad_HotelReservationSystem_EXTERNAL_OBJECTS =
 
 HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o
+HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o
+HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o
+HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o
+HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o
+HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o
 HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make
 HusseinMourad_HotelReservationSystem: CMakeFiles/HusseinMourad_HotelReservationSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HusseinMourad_HotelReservationSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable HusseinMourad_HotelReservationSystem"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HusseinMourad_HotelReservationSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

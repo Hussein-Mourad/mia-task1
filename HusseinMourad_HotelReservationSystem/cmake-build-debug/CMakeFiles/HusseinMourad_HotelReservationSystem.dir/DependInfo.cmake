@@ -8,7 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/Human.cpp.o"
+  "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomService.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/RoomService.cpp.o"
   "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/main.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o"
+  "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o"
+  "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Monster.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o"
+  "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp" "/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
