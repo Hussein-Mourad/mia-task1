@@ -12,18 +12,18 @@ class Guest {
 private:
     string id;
     string name;
-    vector<string> reservedRooms;
+    string type;
 
 public:
-    Guest(string id, string name) : id(id), name(name) {};
+    Guest(string id, string name, string type) : id(id), name(name), type(type) {};
 
     string getId() const;
 
     string getName() const;
 
-    friend ostream &operator<<(ostream &os, const Guest &guest);
+    const string &getType() const;
 
-    virtual ~Guest() = 0;
+    friend ostream &operator<<(ostream &os, const Guest &guest);
 };
 
 #endif// HUSSEINMOURAD_HOTELRESERVATIONSYSTEM_GUEST_H

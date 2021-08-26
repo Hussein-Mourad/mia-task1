@@ -12,5 +12,5 @@ add_executable(HusseinMourad_HotelReservationSystem
         sources/Monster.cpp headers/Monster.h
         headers/Room.h sources/Room.cpp
         sources/Human.cpp headers/Human.h
-        main.cpp sources/MonsterRoom.cpp headers/MonsterRoom.h headers/HumanRoom.cpp headers/HumanRoom.h)
+        main.cpp sources/MonsterRoom.cpp headers/MonsterRoom.h sources/HumanRoom.cpp headers/HumanRoom.h sources/RoomsManager.cpp headers/RoomsManager.h)
 

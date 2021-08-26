@@ -6,6 +6,7 @@
 #define HUSSEINMOURAD_HOTELRESERVATIONSYSTEM_ROOM_H
 
 #include <ctime>
+#include <ostream>
 #include "RoomService.h"
 #include "Guest.h"
 #include "stdafx.h"
@@ -15,12 +16,15 @@ private:
     string id;
     float pricePerNight;
     vector<RoomService *> services;
+    vector<RoomService *> orderedServices;
     Guest *guest = nullptr;
     time_t arrivalDate;
     time_t leaveDate;
+    int nights;
+    string type;
 
 public:
-    Room(const string &id, float pricePerNight,
+    Room(const string &id, float pricePerNight, string type,
          const vector<RoomService *> &services);
 
     const string &getId() const;
@@ -43,7 +47,19 @@ public:
 
     void setLeaveDate(const time_t &leaveDate);
 
+    const string &getType() const;
+
     bool isOccupied();
+
+    const vector<RoomService *> &getOrderedServices() const;
+
+    void setOrderedServices(const vector<RoomService *> &orderedServices);
+
+    int getNights() const;
+
+    void setNights(int nights);
+
+    friend ostream &operator<<(ostream &os, const Room &room);
 };
 
 #endif // HUSSEINMOURAD_HOTELRESERVATIONSYSTEM_ROOM_H

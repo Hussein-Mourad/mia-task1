@@ -10,13 +10,13 @@
 class HumanRoom : public Room {
 private:
     static int count;
-    const vector<RoomService *> services{
+    const vector<RoomService *> services = {
             new RoomService("Dry Clean", 70),
             new RoomService("Spa", 100)
     };
 
 public:
-    HumanRoom() : Room("HR" + count, 500, services) { ++count; };
+    HumanRoom() : Room("HR" + to_string(count), 500, "human", services) { ++count; };
 };
 
 

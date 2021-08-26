@@ -4,8 +4,8 @@
 
 #include "../headers/Room.h"
 
-Room::Room(const string &id, float pricePerNight, const vector<RoomService> &services)
-        : id(id), pricePerNight(pricePerNight), services(services) {}
+Room::Room(const string &id, float pricePerNight, string type, const vector<RoomService *> &services)
+        : id(id), pricePerNight(pricePerNight), type(type), services(services) {}
 
 float Room::getPricePerNight() const {
     return pricePerNight;
@@ -13,14 +13,6 @@ float Room::getPricePerNight() const {
 
 void Room::setPricePerNight(float pricePerNight) {
     Room::pricePerNight = pricePerNight;
-}
-
-Guest *Room::getGuest() const {
-    return guest;
-}
-
-void Room::setGuest(Guest *guest) {
-    Room::guest = guest;
 }
 
 const time_t &Room::getArrivalDate() const {
@@ -50,3 +42,44 @@ bool Room::isOccupied() {
 const vector<RoomService *> &Room::getServices() const {
     return services;
 }
+
+ostream &operator<<(ostream &os, const Room &room) {
+    if (room.guest != nullptr) {
+        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\tguest: " << room.guest
+           << "\tnights: " << room.nights
+           << "\tarrivalDate: "
+           << ctime(&room.arrivalDate) << "\tleaveDate: " << ctime(&room.leaveDate);
+    } else {
+        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight;
+    }
+    return os;
+}
+
+Guest *Room::getGuest() const {
+    return guest;
+}
+
+void Room::setGuest(Guest *guest) {
+    Room::guest = guest;
+}
+
+const string &Room::getType() const {
+    return type;
+}
+
+const vector<RoomService *> &Room::getOrderedServices() const {
+    return orderedServices;
+}
+
+void Room::setOrderedServices(const vector<RoomService *> &orderedServices) {
+    Room::orderedServices = orderedServices;
+}
+
+void Room::setNights(int nights) {
+    Room::nights = nights;
+}
+
+int Room::getNights() const {
+    return nights;
+}
+
