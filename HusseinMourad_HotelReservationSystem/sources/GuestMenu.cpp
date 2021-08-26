@@ -6,7 +6,7 @@
 #include "headers/stdafx.h"
 
 void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
-    cout << guest << endl;
+    cout << endl;
     int choice;
     string userInput;
     do {
@@ -16,11 +16,12 @@ void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
         cin >> choice;
         switch (choice) {
             case 1: {
-                cout << "Enter the number of room you want?" << endl;
-                cin >> userInput;
+                int numberOfRooms;
+                cout << "Enter the numbers of room you want?" << endl;
+                cin >> numberOfRooms;
                 const int availableRooms = roomsManager.roomsAvailable(guest);
 
-                if (availableRooms >= stoi(userInput)) {
+                if (availableRooms >= numberOfRooms) {
                     cout << "Enter the number of nights you want to stay" << endl;
                     cin >> userInput;
                     for (int i = 0; i < stoi(userInput); ++i) {
@@ -49,7 +50,6 @@ void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
                 cin >> userInput;
                 try {
                     roomsManager.extendReservation(guest, roomId, stoi(userInput));
-                    roomsManager.getInvoice(guest);
                 } catch (const char *e) {
                     cout << e << endl;
                 }
@@ -81,7 +81,7 @@ void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
                 cin >> userInput;
                 if (stoi("0" + userInput) == 1) {
                     try {
-                        roomsManager.cancelReservation(guest);
+                        roomsManager.cancelAllReservations(guest);
                     } catch (const char *e) {
                         cout << e << endl;
                     }

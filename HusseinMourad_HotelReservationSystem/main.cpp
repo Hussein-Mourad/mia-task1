@@ -20,6 +20,7 @@ int main() {
     int menuChoice;
     Receptionist *receptionist = new Receptionist(roomsManager);
 
+   
     for (int i = 0; i < 20; ++i) {
         if (i < 5) {
             roomsManager.addRoom(new HumanRoom());

@@ -6,4 +6,8 @@
 
 int MonsterRoom::count = 1;
 
+const vector<RoomService *> &MonsterRoom::getServices() {
+    return services;
+}
+
 

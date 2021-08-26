@@ -5,3 +5,7 @@
 #include "headers/HumanRoom.h"
 
 int HumanRoom::count = 1;
+
+const vector<RoomService *> &HumanRoom::getServices() {
+    return services;
+}

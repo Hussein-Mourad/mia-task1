@@ -34,7 +34,7 @@ public:
 
     void extendReservation(Guest &guest, string roomId, int nights);
 
-    void cancelReservation(Guest &guest);
+    void cancelAllReservations(Guest &guest);
 
     void cancelReservation(Guest &guest, string roomId);
 

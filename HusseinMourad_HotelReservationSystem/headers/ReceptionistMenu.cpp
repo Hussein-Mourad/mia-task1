@@ -5,6 +5,7 @@
 #include "ReceptionistMenu.h"
 
 void ReceptionistMenu::showMenu(RoomsManager roomsManager, Receptionist receptionist) {
+    cout << endl;
     string userInput;
     int choice;
     do {

@@ -39,9 +39,6 @@ bool Room::isOccupied() {
     return guest != nullptr;
 }
 
-const vector<RoomService *> &Room::getServices() const {
-    return services;
-}
 
 Guest *Room::getGuest() const {
     return guest;

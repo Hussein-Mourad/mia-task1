@@ -58,6 +58,7 @@ void RoomsManager::extendReservation(Guest &guest, string roomId, int nights) {
 
 
     cout << "Reservation extended successfully." << endl;
+    getInvoice(guest);
 }
 
 void RoomsManager::cancelReservation(Guest &guest, string roomId) {
@@ -76,9 +77,10 @@ void RoomsManager::cancelReservation(Guest &guest, string roomId) {
     room->setLeaveDate(now);
 
     cout << "Reservation cancelled successfully." << endl;
+    getInvoice(guest);
 }
 
-void RoomsManager::cancelReservation(Guest &guest) {
+void RoomsManager::cancelAllReservations(Guest &guest) {
     for (auto &it: rooms) {
         const auto room = it.second;
         if (room->isOccupied() && room->getGuest()->getId() == guest.getId()) {
@@ -89,6 +91,7 @@ void RoomsManager::cancelReservation(Guest &guest) {
     }
 
     cout << "Reservation cancelled successfully." << endl;
+    getInvoice(guest);
 }
 
 void RoomsManager::orderServices(Guest &guest, string roomId, string service) {
@@ -104,16 +107,19 @@ void RoomsManager::orderServices(Guest &guest, string roomId, string service) {
 
 
     for (auto &it: room->getServices()) {
+
+        cout << (it->getName() == service) << endl;
         if (it->getName() == service) {
             auto orderedServices = room->getOrderedServices();
             orderedServices.push_back(new RoomService(it->getName(), it->getPrice()));
             room->setOrderedServices(orderedServices);
+
             cout << "Service ordered successfully." << endl;
-            break;
+            getInvoice(guest);
+            return;
         }
     }
     throw "Cannot find this service";
-
 
 }
 
@@ -121,22 +127,23 @@ void RoomsManager::getInvoice(Guest &guest) {
     vector<Room *> guestRooms;
     float total = 0;
 
-    cout << "---------------Invoice--------------" << endl;
+    cout << "------------------------------Invoice-----------------------------" << endl;
     for (auto &it: rooms) {
         const auto room = it.second;
         if (room->isOccupied() && room->getGuest()->getId() == guest.getId()) {
-            cout << "Room: " << room->getId() << "\tPrice: " << room->getPricePerNight() * room->getNights() << endl;
+            cout << "Room: " << room->getId() << "\tPrice/night: " << room->getPricePerNight() << "\tNights: "
+                 << room->getNights() << "\tPrice: " << room->getPricePerNight() * room->getNights() << endl;
             total += room->getPricePerNight() * room->getNights();
 
             for (auto &it: room->getOrderedServices()) {
-                cout << "Service: " << it->getName() << "\tPrice: " << it->getPrice() * room->getNights();
+                cout << "Service: " << it->getName() << "\tPrice/night: " << it->getPrice() << "\tNights: "
+                     << room->getNights() << "\tPrice:" << it->getPrice() * room->getNights() << endl;
                 total += it->getPrice() * room->getNights();
             }
         }
     }
     cout << "Total: " << total << endl;
-    cout << "----------------------------" << endl;
-
+    cout << "------------------------------------------------------------------" << endl;
 }
 
 Room *RoomsManager::addRoom(Room *room) {

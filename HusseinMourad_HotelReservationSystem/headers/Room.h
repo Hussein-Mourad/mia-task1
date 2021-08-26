@@ -29,7 +29,7 @@ public:
 
     const string &getId() const;
 
-    const vector<RoomService *> &getServices() const;
+    virtual const vector<RoomService *> &getServices() = 0;
 
     float getPricePerNight() const;
 

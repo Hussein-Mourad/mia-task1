@@ -68,7 +68,6 @@ void Receptionist::showGuestInfo(string &id) {
     if (!found) {
         cout << "No rooms reserved";
     } else {
-        cout << "Invoice";
         roomsManager.getInvoice(*guest);
     }
 }
