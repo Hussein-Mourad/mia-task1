@@ -14,17 +14,17 @@ private:
     string id;
     RoomsManager roomsManager;
 public:
-    Receptionist(const RoomsManager &roomsManager);
+    Receptionist();
 
     const string &getId() const;
 
-    void showAvailableRooms();
+    void showAvailableRooms(RoomsManager roomsManager);
 
-    void showOccupiedRooms();
+    void showOccupiedRooms(RoomsManager roomsManager);
 
-    void showAllGuests();
+    void showAllGuests(RoomsManager roomsManager);
 
-    void showGuestInfo(string &id);
+    void showGuestInfo(RoomsManager roomsManager, string &id);
 
 
 };

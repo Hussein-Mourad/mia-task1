@@ -55,6 +55,8 @@ public:
 
     void setOrderedServices(const vector<RoomService *> &orderedServices);
 
+    void clearOrderedServices();
+
     int getNights() const;
 
     void setNights(int nights);

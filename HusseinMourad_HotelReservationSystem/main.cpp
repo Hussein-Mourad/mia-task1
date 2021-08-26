@@ -18,9 +18,9 @@ int main() {
     string userInput;
     string username;
     int menuChoice;
-    Receptionist *receptionist = new Receptionist(roomsManager);
+    Receptionist *receptionist = new Receptionist();
 
-   
+
     for (int i = 0; i < 20; ++i) {
         if (i < 5) {
             roomsManager.addRoom(new HumanRoom());
@@ -68,6 +68,7 @@ int main() {
                     cout << e << endl;
                 }
             }
+                break;
             case 3: {
                 string id;
                 cout << "Enter your id: " << endl;

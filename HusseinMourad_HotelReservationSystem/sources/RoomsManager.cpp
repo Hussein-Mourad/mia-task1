@@ -68,6 +68,7 @@ void RoomsManager::cancelReservation(Guest &guest, string roomId) {
     }
 
     const auto room = it->second;
+
     if (room->getGuest()->getId() != guest.getId()) {
         throw "Invalid room id";
     }
@@ -75,6 +76,7 @@ void RoomsManager::cancelReservation(Guest &guest, string roomId) {
     room->setGuest(nullptr);
     const time_t now = time(0);
     room->setLeaveDate(now);
+    room->clearOrderedServices();
 
     cout << "Reservation cancelled successfully." << endl;
     getInvoice(guest);
@@ -87,6 +89,7 @@ void RoomsManager::cancelAllReservations(Guest &guest) {
             room->setGuest(nullptr);
             const time_t now = time(0);
             room->setLeaveDate(now);
+            room->clearOrderedServices();
         }
     }
 

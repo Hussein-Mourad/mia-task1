@@ -7,31 +7,39 @@
 
 void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
     cout << endl;
-    int choice;
+    string choice;
     string userInput;
     do {
         cout << "Choose an option:" << endl;
         cout << "1. New Reservation\n" << "2. Extend Reservation\n" << "3. Additional Services\n"
              << "4. Cancel Reservation\n" << "5. Get Invoice" << "\n0. Back" << endl;
         cin >> choice;
-        switch (choice) {
+        switch (stoi("0" + choice)) {
+            case 0:
+                break;
             case 1: {
-                int numberOfRooms;
-                cout << "Enter the numbers of room you want?" << endl;
+                string numberOfRooms;
+                cout << "Enter the number of rooms you want?" << endl;
                 cin >> numberOfRooms;
                 const int availableRooms = roomsManager.roomsAvailable(guest);
 
-                if (availableRooms >= numberOfRooms) {
+                if (availableRooms >= stoi("0" + numberOfRooms)) {
                     cout << "Enter the number of nights you want to stay" << endl;
                     cin >> userInput;
-                    for (int i = 0; i < stoi(userInput); ++i) {
-                        roomsManager.reserveRoom(guest, stoi(userInput));
+                    for (int i = 0; i < stoi("0" + numberOfRooms); ++i) {
+                        try {
+                            roomsManager.reserveRoom(guest, stoi("0" + userInput));
+                        } catch (const char *e) {
+                            cout << e << endl;
+                        }
                     }
 
-                    if (stoi(userInput) == 1) {
+                    if (stoi("0" + userInput) == 1) {
                         cout << "Room reserved successfully." << endl;
-                    } else {
+                    } else if (stoi("0" + userInput) > 1) {
                         cout << "Rooms reserved successfully." << endl;
+                    } else {
+                        exit(0);
                     }
                     roomsManager.getInvoice(guest);
                     break;
@@ -49,7 +57,7 @@ void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
                 cout << "Enter the number of extra nights" << endl;
                 cin >> userInput;
                 try {
-                    roomsManager.extendReservation(guest, roomId, stoi(userInput));
+                    roomsManager.extendReservation(guest, roomId, stoi("0" + userInput));
                 } catch (const char *e) {
                     cout << e << endl;
                 }
@@ -105,6 +113,6 @@ void GuestMenu::showMenu(RoomsManager roomsManager, Guest &guest) {
                 cout << "Invalid input" << endl;
                 break;
         }
-    } while (choice != 0);
+    } while (stoi("0" + choice) != 0);
 }
 

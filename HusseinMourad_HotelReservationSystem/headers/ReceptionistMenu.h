@@ -11,7 +11,7 @@
 
 class ReceptionistMenu {
 public:
-    static void showMenu(RoomsManager roomsManager, Receptionist receptionist);
+    static void showMenu(RoomsManager &roomsManager, Receptionist receptionist);
 };
 
 

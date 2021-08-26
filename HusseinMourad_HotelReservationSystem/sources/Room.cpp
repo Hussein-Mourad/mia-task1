@@ -76,7 +76,11 @@ ostream &operator<<(ostream &os, const Room &room) {
            << "\tarrivalDate: "
            << ctime(&room.arrivalDate) << "\tleaveDate: " << ctime(&room.leaveDate);
     } else {
-        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\toccupied:" << false;
+        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\toccupied:" << "false";
     }
     return os;
+}
+
+void Room::clearOrderedServices() {
+    orderedServices.clear();
 }

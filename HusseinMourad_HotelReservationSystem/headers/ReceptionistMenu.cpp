@@ -4,30 +4,33 @@
 
 #include "ReceptionistMenu.h"
 
-void ReceptionistMenu::showMenu(RoomsManager roomsManager, Receptionist receptionist) {
+void ReceptionistMenu::showMenu(RoomsManager &roomsManager, Receptionist receptionist) {
     cout << endl;
     string userInput;
-    int choice;
+    string choice;
     do {
         cout << "1. Show all Available rooms\n" << "2. Show all occupied rooms\n" << "3. Show All Guests\n"
              << "4. Show guest info\n" << "0. Back" << endl;
-        switch (choice) {
+        cin >> choice;
+        switch (stoi("0" + choice)) {
+            case 0:
+                break;
             case 1: {
-                receptionist.showAvailableRooms();
+                receptionist.showAvailableRooms(roomsManager);
             }
                 break;
             case 2: {
-                receptionist.showOccupiedRooms();
+                receptionist.showOccupiedRooms(roomsManager);
             }
                 break;
             case 3: {
-                receptionist.showAllGuests();
+                receptionist.showAllGuests(roomsManager);
             }
                 break;
             case 4: {
                 cout << "Enter user id: " << endl;
                 cin >> userInput;
-                receptionist.showGuestInfo(userInput);
+                receptionist.showGuestInfo(roomsManager, userInput);
             }
                 break;
             default: {
@@ -35,7 +38,7 @@ void ReceptionistMenu::showMenu(RoomsManager roomsManager, Receptionist receptio
             }
                 break;
         }
-    } while (choice != 0);
+    } while (stoi("0" + choice) != 0);
 
 }
 
