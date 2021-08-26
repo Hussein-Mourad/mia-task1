@@ -1,3 +1,0 @@
-/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/cmake-build-debug/CMakeFiles/HusseinMourad_HotelReservationSystem.dir

@@ -2,12 +2,14 @@
 // Created by hussein on 8/25/21.
 //
 
-#include "../headers/stdafx.h"
-
-Guest::Guest(const string &id, const string &name) : id(id), name(name) {}
+#include "../headers/Guest.h"
 
 string Guest::getId() const { return id; }
 
 string Guest::getName() const { return name; }
 
-string Guest::setName(string name) { this->name = name; }
+ostream &operator<<(ostream &os, const Guest &guest) {
+    os << "id: " << guest.id << " name: " << guest.name << endl;
+    return os;
+}
+
