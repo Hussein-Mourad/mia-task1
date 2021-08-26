@@ -12,9 +12,7 @@ class Human : public Guest {
 private:
     static int count;
 public:
-    Human(const string &name) : Guest("H" + to_string(count), name, "human") {
-        ++count;
-    };
+    Human(const string &name) : Guest("H" + to_string(count++), name, "human") {};
 };
 
 #endif// HUSSEINMOURAD_HOTELRESERVATIONSYSTEM_HUMAN_H

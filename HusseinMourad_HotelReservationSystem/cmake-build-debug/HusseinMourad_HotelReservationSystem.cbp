@@ -89,6 +89,9 @@
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Guest.h">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/GuestMenu.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Human.h">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
@@ -99,6 +102,15 @@
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/MonsterRoom.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Receptionist.h">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/ReceptionistMenu.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/ReceptionistMenu.h">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Room.h">
@@ -119,6 +131,9 @@
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Guest.cpp">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/GuestMenu.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Human.cpp">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
@@ -129,6 +144,9 @@
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/MonsterRoom.cpp">
+			<Option target="HusseinMourad_HotelReservationSystem"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Receptionist.cpp">
 			<Option target="HusseinMourad_HotelReservationSystem"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/sources/Room.cpp">

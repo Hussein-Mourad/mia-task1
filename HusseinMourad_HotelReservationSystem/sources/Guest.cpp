@@ -9,7 +9,7 @@ string Guest::getId() const { return id; }
 string Guest::getName() const { return name; }
 
 ostream &operator<<(ostream &os, const Guest &guest) {
-    os << "id: " << guest.id << " name: " << guest.name;
+    os << "id: " << guest.id << "\tname: " << guest.name << "\ttype: " << guest.type;
     return os;
 }
 

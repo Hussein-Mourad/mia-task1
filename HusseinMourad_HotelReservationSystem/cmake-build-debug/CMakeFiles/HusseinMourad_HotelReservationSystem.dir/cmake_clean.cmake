@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/ReceptionistMenu.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o"
+  "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/GuestMenu.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Human.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/HumanRoom.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Monster.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/MonsterRoom.cpp.o"
+  "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Receptionist.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Room.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/RoomService.cpp.o"
   "CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/RoomsManager.cpp.o"

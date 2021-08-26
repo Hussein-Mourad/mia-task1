@@ -23,19 +23,22 @@ public:
 
     Guest *getGuest(string id);
 
+
     const map<string, Room *> &getRooms() const;
 
     const map<string, Guest *> &getGuests() const;
 
-    bool isRoomsAvailable(Guest &guest, int count);
+    int roomsAvailable(Guest &guest);
 
     void reserveRoom(Guest &guest, int nights);
 
     void extendReservation(Guest &guest, string roomId, int nights);
 
+    void cancelReservation(Guest &guest);
+
     void cancelReservation(Guest &guest, string roomId);
 
-    void orderServices(Guest &guest, string roomId, RoomService &service);
+    void orderServices(Guest &guest, string roomId, string service);
 
     void getInvoice(Guest &guest);
 };

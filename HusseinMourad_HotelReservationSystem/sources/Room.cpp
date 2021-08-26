@@ -43,18 +43,6 @@ const vector<RoomService *> &Room::getServices() const {
     return services;
 }
 
-ostream &operator<<(ostream &os, const Room &room) {
-    if (room.guest != nullptr) {
-        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\tguest: " << room.guest
-           << "\tnights: " << room.nights
-           << "\tarrivalDate: "
-           << ctime(&room.arrivalDate) << "\tleaveDate: " << ctime(&room.leaveDate);
-    } else {
-        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight;
-    }
-    return os;
-}
-
 Guest *Room::getGuest() const {
     return guest;
 }
@@ -83,3 +71,15 @@ int Room::getNights() const {
     return nights;
 }
 
+
+ostream &operator<<(ostream &os, const Room &room) {
+    if (room.guest != nullptr) {
+        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\tguest: " << room.guest
+           << "\tnights: " << room.nights
+           << "\tarrivalDate: "
+           << ctime(&room.arrivalDate) << "\tleaveDate: " << ctime(&room.leaveDate);
+    } else {
+        os << "id: " << room.id << "\tpricePerNight: " << room.pricePerNight << "\toccupied:" << false;
+    }
+    return os;
+}

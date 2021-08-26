@@ -129,6 +129,30 @@ HusseinMourad_HotelReservationSystem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build
 .PHONY : HusseinMourad_HotelReservationSystem/fast
 
+headers/ReceptionistMenu.o: headers/ReceptionistMenu.cpp.o
+.PHONY : headers/ReceptionistMenu.o
+
+# target to build an object file
+headers/ReceptionistMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/ReceptionistMenu.cpp.o
+.PHONY : headers/ReceptionistMenu.cpp.o
+
+headers/ReceptionistMenu.i: headers/ReceptionistMenu.cpp.i
+.PHONY : headers/ReceptionistMenu.i
+
+# target to preprocess a source file
+headers/ReceptionistMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/ReceptionistMenu.cpp.i
+.PHONY : headers/ReceptionistMenu.cpp.i
+
+headers/ReceptionistMenu.s: headers/ReceptionistMenu.cpp.s
+.PHONY : headers/ReceptionistMenu.s
+
+# target to generate assembly for a file
+headers/ReceptionistMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/headers/ReceptionistMenu.cpp.s
+.PHONY : headers/ReceptionistMenu.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -176,6 +200,30 @@ sources/Guest.s: sources/Guest.cpp.s
 sources/Guest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.s
 .PHONY : sources/Guest.cpp.s
+
+sources/GuestMenu.o: sources/GuestMenu.cpp.o
+.PHONY : sources/GuestMenu.o
+
+# target to build an object file
+sources/GuestMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/GuestMenu.cpp.o
+.PHONY : sources/GuestMenu.cpp.o
+
+sources/GuestMenu.i: sources/GuestMenu.cpp.i
+.PHONY : sources/GuestMenu.i
+
+# target to preprocess a source file
+sources/GuestMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/GuestMenu.cpp.i
+.PHONY : sources/GuestMenu.cpp.i
+
+sources/GuestMenu.s: sources/GuestMenu.cpp.s
+.PHONY : sources/GuestMenu.s
+
+# target to generate assembly for a file
+sources/GuestMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/GuestMenu.cpp.s
+.PHONY : sources/GuestMenu.cpp.s
 
 sources/Human.o: sources/Human.cpp.o
 .PHONY : sources/Human.o
@@ -273,6 +321,30 @@ sources/MonsterRoom.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/MonsterRoom.cpp.s
 .PHONY : sources/MonsterRoom.cpp.s
 
+sources/Receptionist.o: sources/Receptionist.cpp.o
+.PHONY : sources/Receptionist.o
+
+# target to build an object file
+sources/Receptionist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Receptionist.cpp.o
+.PHONY : sources/Receptionist.cpp.o
+
+sources/Receptionist.i: sources/Receptionist.cpp.i
+.PHONY : sources/Receptionist.i
+
+# target to preprocess a source file
+sources/Receptionist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Receptionist.cpp.i
+.PHONY : sources/Receptionist.cpp.i
+
+sources/Receptionist.s: sources/Receptionist.cpp.s
+.PHONY : sources/Receptionist.s
+
+# target to generate assembly for a file
+sources/Receptionist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HusseinMourad_HotelReservationSystem.dir/build.make CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Receptionist.cpp.s
+.PHONY : sources/Receptionist.cpp.s
+
 sources/Room.o: sources/Room.cpp.o
 .PHONY : sources/Room.o
 
@@ -354,12 +426,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HusseinMourad_HotelReservationSystem"
+	@echo "... headers/ReceptionistMenu.o"
+	@echo "... headers/ReceptionistMenu.i"
+	@echo "... headers/ReceptionistMenu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... sources/Guest.o"
 	@echo "... sources/Guest.i"
 	@echo "... sources/Guest.s"
+	@echo "... sources/GuestMenu.o"
+	@echo "... sources/GuestMenu.i"
+	@echo "... sources/GuestMenu.s"
 	@echo "... sources/Human.o"
 	@echo "... sources/Human.i"
 	@echo "... sources/Human.s"
@@ -372,6 +450,9 @@ help:
 	@echo "... sources/MonsterRoom.o"
 	@echo "... sources/MonsterRoom.i"
 	@echo "... sources/MonsterRoom.s"
+	@echo "... sources/Receptionist.o"
+	@echo "... sources/Receptionist.i"
+	@echo "... sources/Receptionist.s"
 	@echo "... sources/Room.o"
 	@echo "... sources/Room.i"
 	@echo "... sources/Room.s"

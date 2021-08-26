@@ -23,19 +23,17 @@ void RoomsManager::reserveRoom(Guest &guest, int nights) {
         }
     }
 
-    if (reserved) {
-        cout << "Room reserved successfully." << endl;
-    } else throw "No rooms available.";
+    if (!reserved) throw "No rooms available.";
 }
 
-bool RoomsManager::isRoomsAvailable(Guest &guest, int count) {
+int RoomsManager::roomsAvailable(Guest &guest) {
     int availableRooms = 0;
     for (auto &it: rooms) {
         if (!it.second->isOccupied() && it.second->getType() == guest.getType()) {
             availableRooms++;
         }
     }
-    return availableRooms == count;
+    return availableRooms;
 }
 
 void RoomsManager::extendReservation(Guest &guest, string roomId, int nights) {
@@ -47,7 +45,7 @@ void RoomsManager::extendReservation(Guest &guest, string roomId, int nights) {
 
     const auto room = it->second;
 
-    if (room->getGuest()->getType() != guest.getId()) {
+    if (room->getGuest()->getId() != guest.getId()) {
         throw "Invalid room id";
     }
 
@@ -80,7 +78,20 @@ void RoomsManager::cancelReservation(Guest &guest, string roomId) {
     cout << "Reservation cancelled successfully." << endl;
 }
 
-void RoomsManager::orderServices(Guest &guest, string roomId, RoomService &service) {
+void RoomsManager::cancelReservation(Guest &guest) {
+    for (auto &it: rooms) {
+        const auto room = it.second;
+        if (room->isOccupied() && room->getGuest()->getId() == guest.getId()) {
+            room->setGuest(nullptr);
+            const time_t now = time(0);
+            room->setLeaveDate(now);
+        }
+    }
+
+    cout << "Reservation cancelled successfully." << endl;
+}
+
+void RoomsManager::orderServices(Guest &guest, string roomId, string service) {
     auto it = rooms.find(roomId);
     if (it == rooms.end()) {
         throw "Invalid room id";
@@ -91,30 +102,40 @@ void RoomsManager::orderServices(Guest &guest, string roomId, RoomService &servi
         throw "Invalid room id";
     }
 
-    auto orderedServices = room->getOrderedServices();
-    orderedServices.push_back(&service);
-    room->setOrderedServices(orderedServices);
 
-    cout << "Service ordered successfully." << endl;
+    for (auto &it: room->getServices()) {
+        if (it->getName() == service) {
+            auto orderedServices = room->getOrderedServices();
+            orderedServices.push_back(new RoomService(it->getName(), it->getPrice()));
+            room->setOrderedServices(orderedServices);
+            cout << "Service ordered successfully." << endl;
+            break;
+        }
+    }
+    throw "Cannot find this service";
+
+
 }
 
 void RoomsManager::getInvoice(Guest &guest) {
     vector<Room *> guestRooms;
     float total = 0;
 
+    cout << "---------------Invoice--------------" << endl;
     for (auto &it: rooms) {
         const auto room = it.second;
-        if (room->getGuest()->getId() == guest.getId()) {
-            cout << "Room: " << room->getId() << "\tPrice: " << room->getPricePerNight() << endl;
-            total += room->getPricePerNight();
+        if (room->isOccupied() && room->getGuest()->getId() == guest.getId()) {
+            cout << "Room: " << room->getId() << "\tPrice: " << room->getPricePerNight() * room->getNights() << endl;
+            total += room->getPricePerNight() * room->getNights();
 
             for (auto &it: room->getOrderedServices()) {
-                cout << "Service: " << it->getName() << "\tPrice: " << it->getPrice();
-                total += it->getPrice();
+                cout << "Service: " << it->getName() << "\tPrice: " << it->getPrice() * room->getNights();
+                total += it->getPrice() * room->getNights();
             }
         }
     }
     cout << "Total: " << total << endl;
+    cout << "----------------------------" << endl;
 
 }
 
@@ -125,7 +146,7 @@ Room *RoomsManager::addRoom(Room *room) {
 
 Guest *RoomsManager::addGuest(Guest *guest) {
     guests[guest->getId()] = guest;
-    cout << *guest << endl;
+    cout << "Hi, " << guest->getName() << " your id is " << guest->getId() << endl;
     return guest;
 }
 
@@ -144,5 +165,6 @@ Guest *RoomsManager::getGuest(string id) {
     }
     return it->second;
 }
+
 
 

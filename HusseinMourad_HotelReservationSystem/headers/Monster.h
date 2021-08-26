@@ -13,9 +13,7 @@ private:
     static int count;
 
 public:
-    Monster(const string &name) : Guest("M" + to_string(count), name, "human") {
-        ++count;
-    };
+    Monster(const string &name) : Guest("M" + to_string(count++), name, "monster") {};
 };
 
 #endif// HUSSEINMOURAD_HOTELRESERVATIONSYSTEM_MONSTER_H
