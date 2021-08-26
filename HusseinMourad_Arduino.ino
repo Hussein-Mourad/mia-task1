@@ -26,9 +26,7 @@ void loop()
   if (shift == 25) {
         shift = 1;
   }
-  
   inputPassword=decrypt(inputPassword, shift++);
- 
  
   if(inputPassword ==password){
     digitalWrite(ledPin, HIGH);
@@ -60,4 +58,3 @@ String decrypt(String text, short shift){
   }
   return result;
 }
-
