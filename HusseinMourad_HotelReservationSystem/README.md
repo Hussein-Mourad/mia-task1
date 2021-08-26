@@ -9,7 +9,7 @@ This software is developed and tested on linux by clion.
 
 ## Demo
 
-[demo](./demo.gif)
+![demo](./demo.gif)
 
 ## Features
 
