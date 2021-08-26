@@ -118,3 +118,31 @@ void RoomsManager::getInvoice(Guest &guest) {
 
 }
 
+Room *RoomsManager::addRoom(Room *room) {
+    rooms[room->getId()] = room;
+    return room;
+}
+
+Guest *RoomsManager::addGuest(Guest *guest) {
+    guests[guest->getId()] = guest;
+    cout << *guest << endl;
+    return guest;
+}
+
+const map<string, Room *> &RoomsManager::getRooms() const {
+    return rooms;
+}
+
+const map<string, Guest *> &RoomsManager::getGuests() const {
+    return guests;
+}
+
+Guest *RoomsManager::getGuest(string id) {
+    auto it = guests.find(id);
+    if (it == guests.end()) {
+        throw "Invalid id";
+    }
+    return it->second;
+}
+
+

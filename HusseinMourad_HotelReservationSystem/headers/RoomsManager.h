@@ -15,6 +15,18 @@ private:
     map<string, Guest *> guests;
 
 public:
+    RoomsManager() {};
+
+    Room *addRoom(Room *room);
+
+    Guest *addGuest(Guest *guest);
+
+    Guest *getGuest(string id);
+
+    const map<string, Room *> &getRooms() const;
+
+    const map<string, Guest *> &getGuests() const;
+
     bool isRoomsAvailable(Guest &guest, int count);
 
     void reserveRoom(Guest &guest, int nights);

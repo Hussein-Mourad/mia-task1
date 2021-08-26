@@ -9,6 +9,7 @@ CMakeFiles/HusseinMourad_HotelReservationSystem.dir/main.cpp.o: \
  ../headers/Human.h \
  ../headers/HumanRoom.h \
  ../headers/Monster.h \
+ ../headers/RoomsManager.h \
  ../headers/stdafx.h \
  ../main.cpp
 CMakeFiles/HusseinMourad_HotelReservationSystem.dir/sources/Guest.cpp.o: \

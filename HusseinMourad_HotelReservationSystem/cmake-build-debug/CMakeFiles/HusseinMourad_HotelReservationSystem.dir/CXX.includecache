@@ -50,6 +50,14 @@ stdafx.h
 Guest.h
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Guest.h
 
+/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomsManager.h
+stdafx.h
+/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/stdafx.h
+Room.h
+/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Room.h
+Guest.h
+/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Guest.h
+
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/stdafx.h
 string
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/string
@@ -61,10 +69,10 @@ map
 -
 
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/main.cpp
-headers/MonsterRoom.h
--
 headers/stdafx.h
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/stdafx.h
+headers/MonsterRoom.h
+-
 headers/Guest.h
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Guest.h
 headers/Human.h
@@ -73,4 +81,6 @@ headers/Monster.h
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/Monster.h
 headers/HumanRoom.h
 /mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/HumanRoom.h
+headers/RoomsManager.h
+/mnt/d/CLionProjects/mia-task1/HusseinMourad_HotelReservationSystem/headers/RoomsManager.h
 
